@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ppb_proyek_akhir/boarding_pass.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -10,9 +11,15 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    return Scaffold(
       body: Center(
-        child: Text('Home page'),
+        child: TextButton(
+          onPressed: () {
+            Navigator.push(context,
+                MaterialPageRoute(builder: (context) => BoardingPass()));
+          },
+          child: Text('Test Boarding Pass page'),
+        ),
       ),
     );
   }
