@@ -22,7 +22,7 @@ class MainApp extends StatelessWidget {
       themeMode: ThemeMode.dark,
       title: 'Astral Express Ticket App',
       debugShowCheckedModeBanner: false,
-      home: LoginPage(),
+      home: const LoginPage(),
     );
   }
 }
