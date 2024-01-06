@@ -1,6 +1,7 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:ppb_proyek_akhir/firebase_options.dart';
+import 'package:ppb_proyek_akhir/home_page.dart';
 import 'package:ppb_proyek_akhir/login_page.dart';
 import 'package:ppb_proyek_akhir/color_schemes.g.dart';
 
@@ -22,7 +23,12 @@ class MainApp extends StatelessWidget {
       themeMode: ThemeMode.dark,
       title: 'Astral Express Ticket App',
       debugShowCheckedModeBanner: false,
-      home: const LoginPage(),
+      initialRoute: '/',
+      routes: {
+        '/': (context) => const LoginPage(),
+        '/home': (context) => const HomePage(),
+      },
+      // home: const LoginPage(),
     );
   }
 }

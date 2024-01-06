@@ -1,6 +1,5 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:ppb_proyek_akhir/home_page.dart';
 import 'package:ppb_proyek_akhir/register_page.dart';
 import 'package:ppb_proyek_akhir/style.dart';
 
@@ -37,11 +36,7 @@ class _LoginPageState extends State<LoginPage> {
         password: password,
       );
       // ignore: use_build_context_synchronously
-      Navigator.of(context).pushReplacement(
-        MaterialPageRoute(builder: (context) {
-          return const HomePage();
-        }),
-      );
+      Navigator.pushReplacementNamed(context, '/home');
     } catch (e) {
       final snackBar = SnackBar(
         content: Text('Error: ${e.toString()}'),

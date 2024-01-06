@@ -20,7 +20,6 @@ class _BoardingPassState extends State<BoardingPass> {
     return Scaffold(
       backgroundColor: darkColorScheme.onPrimary,
       appBar: AppBar(
-        leading: const BackButton(),
         title: const Text('Boarding Pass'),
         centerTitle: true,
       ),
