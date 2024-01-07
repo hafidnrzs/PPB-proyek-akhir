@@ -70,15 +70,15 @@ class _BoardingPassState extends State<BoardingPass> {
                                     color: Colors.black,
                                   ),
                                 ),
-                                Text('05 January 2023'),
+                                Text('07 January 2023'),
                               ],
                             ),
                             Column(
                               crossAxisAlignment: CrossAxisAlignment.end,
                               children: [
-                                Text('Jarilo VI'),
+                                Text('Herta Space Station'),
                                 Text(
-                                  'JRL',
+                                  'HSS',
                                   style: TextStyle(
                                     fontSize: 40,
                                     fontWeight: FontWeight.bold,
